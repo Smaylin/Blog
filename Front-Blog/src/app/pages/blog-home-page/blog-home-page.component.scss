@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+text-align: center;
+}
+.container{
+    display: grid;
+    gap: 20px 10px;
+    grid-auto-flow:dense;
+    grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin:auto;
+    }
+
+    .card{
+        border-radius: 0.5rem;
+        background-color: #d8d0d0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin-top: 40px;
+    }
+
+.card:hover{
+    cursor: pointer;
+    color: rgb(99, 77, 185);
+}

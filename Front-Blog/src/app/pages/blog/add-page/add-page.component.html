@@ -1,0 +1,11 @@
+<div class="container">
+    <form action="">
+        <label for="title">Tarea</label>
+        <input type="text" id="title" name="title" [(ngModel)]="newBlog.title">
+        <br>
+        <label for="content">Estado</label>
+        <input type="text" name="content" id="content" [(ngModel)]="newBlog.content" >
+        <br>
+        <button class="btn btn-primary" (click)="addBlog()">Guardar</button>
+    </form>
+</div>

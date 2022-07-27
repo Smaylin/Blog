@@ -1,0 +1,25 @@
+
+<div class="container">
+    <button class="btn btn-primary" [routerLink]="['/add']" routerLinkActive="router-link-active" >Agregar</button>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Titulo</th>
+                <th scope="col">Contenido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let blog of list">
+                <td>{{blog.id}}</td>
+                <td>{{blog.title}}</td>
+                <td>{{blog.content}}</td>
+                <td>
+                    <button class="btn btn-danger" (click)="delete(blog.id)">Eliminar</button>
+                    <button class="btn btn-warning" [routerLink]="['/edit/',blog.id]" routerLinkActive="router-link-active" >Modificar</button>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

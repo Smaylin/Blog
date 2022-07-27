@@ -1,0 +1,16 @@
+.menu-item {
+    height: 20px;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background: darkred;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+ 
+    &.active {
+       background-color: darksalmon; }
+  }
+ 

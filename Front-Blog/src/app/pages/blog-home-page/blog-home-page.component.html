@@ -1,0 +1,11 @@
+<h1>Welcome to the blog</h1>
+
+<div class="container">
+    <div class="card" *ngFor="let blog of listBlogs; let i=index" >
+        <div  [routerLink]="blog.id"  [state]="{data: blog}" >
+            <h4  class="blog">Title: {{blog.title}}</h4>
+            <p class="blog">Description:{{blog.content}} </p>
+        </div>
+    </div>
+</div>
+
